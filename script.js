@@ -19,6 +19,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ── Hamburger menu toggle ────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    if (hamburger && sidebar) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidebar.classList.toggle('show');
+        });
+
+        // Close sidebar when clicking on a link
+        document.querySelectorAll('.sidebar-title').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                sidebar.classList.remove('show');
+            });
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 576) {
+                if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    sidebar.classList.remove('show');
+                }
+            }
+        });
+    }
+
     // ── Scroll-in animation for cards ────────────────────────────────────────
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
