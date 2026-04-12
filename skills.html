@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Software Testing with AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Header -->
+    <div style="position: fixed; left: 0; top: 0; width: 280px; height: 56px; background: linear-gradient(90deg, #1a1a2e, #16213e); border-right: 2px solid #00d4ff; border-bottom: 2px solid #00d4ff; display: flex; align-items: center; justify-content: center; z-index: 1001;">
+        <span style="color: #00d4ff; font-weight: bold; font-size: 1.1rem; letter-spacing: 1px;">MASTER IN CLAUDE</span>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html" class="sidebar-title"><i class="fas fa-home"></i> Home</a>
+        <a href="setup.html" class="sidebar-title"><i class="fas fa-download"></i> Install Claude</a>
+        <a href="models.html" class="sidebar-title"><i class="fas fa-microchip"></i> Claude Models</a>
+        <a href="modes.html" class="sidebar-title"><i class="fas fa-sliders"></i> Plan vs Act Mode</a>
+        <a href="claude-md.html" class="sidebar-title"><i class="fas fa-file-code"></i> CLAUDE.md</a>
+        <a href="memory.html" class="sidebar-title"><i class="fas fa-memory"></i> Memory</a>
+        <a href="prompt.html" class="sidebar-title"><i class="fas fa-pen-fancy"></i> Prompt Engineering</a>
+        <a href="context.html" class="sidebar-title"><i class="fas fa-brain"></i> Context Engineering</a>
+        <a href="ai-systems.html" class="sidebar-title"><i class="fas fa-layer-group"></i> AI Systems</a>
+        <a href="skills.html" class="sidebar-title"><i class="fas fa-wand-magic-sparkles"></i> Skills</a>
+        <a href="agents.html" class="sidebar-title"><i class="fas fa-robot"></i> Agents</a>
+        <a href="hooks.html" class="sidebar-title"><i class="fas fa-anchor"></i> Hooks</a>
+        <a href="commands.html" class="sidebar-title"><i class="fas fa-terminal"></i> Commands</a>
+        <a href="mcp.html" class="sidebar-title"><i class="fas fa-server"></i> MCP Server</a>
+        <a href="superpower.html" class="sidebar-title"><i class="fas fa-bolt"></i> ⚡ Superpower</a>
+        <a href="principles.html" class="sidebar-title"><i class="fas fa-star"></i> Key Principles</a>
+        <a href="marketplace.html" class="sidebar-title"><i class="fas fa-store"></i> Marketplaces</a>
+    </div>
+    <div class="main-content">
+        <div class="container-fluid py-5" style="background: #0a0a14;">
+            <div class="container">
+                <section id="skills" class="section">
+                    <h2><i class="fas fa-wand-magic-sparkles"></i> Skills</h2>
+                    <p class="lead">Reusable expertise you write once, use everywhere.</p>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">What is Skill?</h4>
+                    <p>Skill is a reusable expertise. Without a skill: every time you want Claude to do a task, you'd have to explain how — which library to use, the file format, styling rules, etc.</p>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">Available Skills</h4>
+                    <div class="row">
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-list-check"></i> analyze-requirement</h5><p class="card-text">Extract business logic, system flow, scope, risks, and gaps from requirements or Jira tickets.</p></div></div></div>
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-code"></i> explain-code</h5><p class="card-text">Explain code flow, logic, and business behavior from files or commits.</p></div></div></div>
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-bug"></i> find-bug</h5><p class="card-text">Identify high-probability bugs from code/commits using business logic and DB context.</p></div></div></div>
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-flask"></i> test-design</h5><p class="card-text">Generate sanity-focused test cases based on business logic and nearby impact.</p></div></div></div>
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-shield-halved"></i> analyze-security</h5><p class="card-text">Identify real, exploitable vulnerabilities in code or flow.</p></div></div></div>
+                        <div class="col-md-6 mb-4"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-magnifying-glass"></i> analyze-rootcause</h5><p class="card-text">Analyze logs/errors and identify root cause using code + DB.</p></div></div></div>
+                    </div>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">When to use:</h4>
+                    <ul>
+                        <li>Only bug finding: <span class="badge-custom">/find-bug payment.js</span></li>
+                        <li>Only test case generation: <span class="badge-custom">/test-design payment.js</span></li>
+                        <li>Only root cause analysis: <span class="badge-custom">/analyze-rootcause error.log</span></li>
+                    </ul>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">Folder Structure</h4>
+                    <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">.claude/skills/
+├── analyze-requirement/SKILL.md
+├── explain-code/SKILL.md
+├── find-bug/SKILL.md
+├── test-design/SKILL.md
+├── analyze-security/SKILL.md
+└── analyze-rootcause/SKILL.md</pre></div>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">SKILL.md Files</h4>
+                    <p>Each SKILL.md defines: role, tool usage rules, output format, and constraints. Click to expand:</p>
+
+                    <div class="accordion mb-4" id="skillsAccordion">
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAR">analyze-requirement &gt; SKILL.md</button></h2>
+                            <div id="skillAR" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: analyze-requirement
+description: Analyze requirement or Jira ticket to extract business logic, system flow, scope, risks, and gaps
+---
+
+You are a Senior SDET and QA Engineer.
+
+## Tool Usage (MANDATORY)
+- If Jira ticket/link/ID → Fetch using `mcp__jira-mcp__get_jira_ticket`
+- If plain-text → Analyze directly from the given text
+
+## Output
+### 1. Summary — Feature, User, Goal
+### 2. Business Flow — Main flow, Key conditions, Input→output
+### 3. Scope — In scope / Out of scope
+### 4. System Impact — UI/API/DB/services/roles
+### 5. Risks — Functional/Data/Security/Performance
+### 6. Gaps — Missing requirements, Assumptions, Questions
+### 7. Edge Cases — 3–5 boundary conditions / failure paths
+
+## Rules
+- Concise (bullet points only) — No test cases — No deep code explanation</pre></div>
+                            </div></div>
+                        </div>
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillEC">explain-code &gt; SKILL.md</button></h2>
+                            <div id="skillEC" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: explain-code
+description: Explain code flow, logic, and business behavior from file or commit
+---
+
+You are a Senior SDET. Explain code with logic + business understanding.
+
+## Tool Usage (MANDATORY)
+- File path → `Read` the file
+- Commit hash → `Bash`: `git show &lt;hash&gt;`
+- "latest change" / HEAD → `Bash`: `git show HEAD`
+- Symbol/function → `Grep` to locate, then `Read`
+- References other files → `Read` those files too
+
+## Output
+### 1. Purpose — What this code does
+### 2. Flow — Entry point → function calls → exit/return
+### 3. Logic — Conditions / decisions
+### 4. Components — functions / APIs / DB
+### 5. Data Flow — input → transform → store/return
+### 6. Dependencies — related modules/services
+### 7. Risks — logical / data / concurrency
+
+## Rules — No test cases — No requirement analysis — Concise</pre></div>
+                            </div></div>
+                        </div>
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillFB">find-bug &gt; SKILL.md</button></h2>
+                            <div id="skillFB" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: find-bug
+description: Identify high-probability bugs from code/commit using business logic and DB context
+---
+
+You are a Senior QA bug hunter. Find high-probability bugs only.
+
+## Tool Usage (MANDATORY)
+- File path → `Read` the file
+- Commit hash → `Bash`: `git show &lt;hash&gt;`
+- References other files → `Read` those files
+- Data/state validation → `mcp__db-mcp__execute_query` or `mcp__db-mcp__describe_table`
+
+## Thinking (MANDATORY)
+- Trace execution flow — Read surrounding functions — Identify broken assumptions
+
+## Output per Bug
+- Probability: High/Medium — Type: Functional/Security/Performance/Concurrency
+- Why: (evidence from code — file:line)
+- Steps to trigger — Expected vs Actual — Impact — Area
+
+## Rules — Max 5–8 bugs — No generic guesses — Evidence required</pre></div>
+                            </div></div>
+                        </div>
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillTD">test-design &gt; SKILL.md</button></h2>
+                            <div id="skillTD" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: test-design
+description: Generate sanity-focused test cases based on business logic and nearby impact
+---
+
+You are a Senior QA Engineer. Design sanity test cases only.
+
+## Tool Usage (MANDATORY)
+- File path → `Read` — Commit → `git show` — Realistic data → `mcp__db-mcp__execute_query`
+
+## Output per Test Case
+- Test Title: Verify that [condition] when [action]
+- Type: Functional/Negative/Security/Performance — Priority: High/Medium
+- Preconditions — Steps (with concrete input values) — Expected Result
+
+## Coverage Rules
+- Core flow: 3–5 tests — Negative: 1–2 — Security: 1–2 (if auth/data) — Perf: 1 (if queries/loops)
+
+## Rules — Max 6–12 cases — No trivial checks — Business-critical flows only</pre></div>
+                            </div></div>
+                        </div>
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAS">analyze-security &gt; SKILL.md</button></h2>
+                            <div id="skillAS" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: analyze-security
+description: Identify real, exploitable vulnerabilities in code or flow
+---
+
+You are a Security-focused SDET. Find real security risks.
+
+## Tool Usage (MANDATORY)
+- Source files → `Read` — Symbols/patterns → `Grep` — Commit/diff → `Bash` git show
+- DB schema → `mcp__db-mcp__describe_table` or `mcp__db-mcp__execute_query`
+
+## Output
+### 1. Context — What this feature does — Sensitive area? (auth/payment/data)
+### 2. Issues (per issue): Severity — Why (evidence) — Attack steps — Impact — Fix
+
+## Focus Areas — auth/access — input validation — data exposure — logic bypass — API misuse
+
+## Rules — No generic OWASP list — Only real, relevant issues — Concise</pre></div>
+                            </div></div>
+                        </div>
+                        <div class="accordion-item" style="background: #1a1a2e; border: 1px solid #00d4ff; margin-bottom: 10px; border-radius: 8px; overflow: hidden;">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillRC">analyze-rootcause &gt; SKILL.md</button></h2>
+                            <div id="skillRC" class="accordion-collapse collapse"><div class="accordion-body">
+                                <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.85rem;">---
+name: analyze-rootcause
+description: Analyze logs/errors and identify root cause using code + DB
+---
+
+You are a Senior SDET debugger. Find the most probable root cause.
+
+## Tool Usage (MANDATORY)
+- Log references DB → `mcp__db-mcp__execute_query` / `get_sample_rows` / `describe_table`
+- Related code → `Read` files, `Grep` symbols/patterns
+
+## Output
+### 1. Error — What failed — Where
+### 2. Root Cause — Most likely reason (ranked by confidence) + evidence
+### 3. Flow — What happened before failure
+### 4. Reproduction — Specific inputs, state, environment conditions
+### 5. Impact — system/data/user
+### 6. Fix — Immediate fix + Preventive improvement
+
+## Rules — Max 3 possible causes — No guessing without evidence — Concise</pre></div>
+                            </div></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-5 mt-5">
+        <div class="container">
+            <p>© 2026 Road to Career.</p>
+            <p style="font-size: 0.9rem;">Build reliable, intelligent testing systems with Claude AI</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAUDE.md - Software Testing with AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Header -->
+    <div style="position: fixed; left: 0; top: 0; width: 280px; height: 56px; background: linear-gradient(90deg, #1a1a2e, #16213e); border-right: 2px solid #00d4ff; border-bottom: 2px solid #00d4ff; display: flex; align-items: center; justify-content: center; z-index: 1001;">
+        <span style="color: #00d4ff; font-weight: bold; font-size: 1.1rem; letter-spacing: 1px;">MASTER IN CLAUDE</span>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html" class="sidebar-title"><i class="fas fa-home"></i> Home</a>
+        <a href="setup.html" class="sidebar-title"><i class="fas fa-download"></i> Install Claude</a>
+        <a href="models.html" class="sidebar-title"><i class="fas fa-microchip"></i> Claude Models</a>
+        <a href="modes.html" class="sidebar-title"><i class="fas fa-sliders"></i> Plan vs Act Mode</a>
+        <a href="claude-md.html" class="sidebar-title"><i class="fas fa-file-code"></i> CLAUDE.md</a>
+        <a href="memory.html" class="sidebar-title"><i class="fas fa-memory"></i> Memory</a>
+        <a href="prompt.html" class="sidebar-title"><i class="fas fa-pen-fancy"></i> Prompt Engineering</a>
+        <a href="context.html" class="sidebar-title"><i class="fas fa-brain"></i> Context Engineering</a>
+        <a href="ai-systems.html" class="sidebar-title"><i class="fas fa-layer-group"></i> AI Systems</a>
+        <a href="skills.html" class="sidebar-title"><i class="fas fa-wand-magic-sparkles"></i> Skills</a>
+        <a href="agents.html" class="sidebar-title"><i class="fas fa-robot"></i> Agents</a>
+        <a href="hooks.html" class="sidebar-title"><i class="fas fa-anchor"></i> Hooks</a>
+        <a href="commands.html" class="sidebar-title"><i class="fas fa-terminal"></i> Commands</a>
+        <a href="mcp.html" class="sidebar-title"><i class="fas fa-server"></i> MCP Server</a>
+        <a href="superpower.html" class="sidebar-title"><i class="fas fa-bolt"></i> ⚡ Superpower</a>
+        <a href="principles.html" class="sidebar-title"><i class="fas fa-star"></i> Key Principles</a>
+        <a href="marketplace.html" class="sidebar-title"><i class="fas fa-store"></i> Marketplaces</a>
+    </div>
+    <div class="main-content">
+        <div class="container-fluid py-5" style="background: #0a0a14;">
+            <div class="container">
+                <section id="claudemd" class="section">
+                    <h2><i class="fas fa-file-code"></i> CLAUDE.md</h2>
+                    <p class="lead">The project config file Claude reads automatically at the start of every session.</p>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <h4 style="color: #00d4ff;">What is CLAUDE.md?</h4>
+                            <p>A markdown file that Claude Code reads before doing any work. It tells Claude about your project — tech stack, conventions, agent routing rules — so you never have to repeat yourself each session.</p>
+                            <h5 style="color: #00d4ff;" class="mt-4">Where to place it:</h5>
+                            <div class="highlight-box">
+                                <div class="list-item"><strong>Project-level</strong> — applies to this repo only</div>
+                                <div class="code-block">your-project/CLAUDE.md</div>
+                                <div class="list-item"><strong>Global</strong> — applies to all projects on this machine</div>
+                                <div class="code-block">C:\Users\&lt;YourName&gt;\.claude\CLAUDE.md</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 style="color: #00d4ff;">Why it matters:</h4>
+                            <ul>
+                                <li>Claude knows your project without being told every session</li>
+                                <li>Enforces consistent behavior across all skills and agents</li>
+                                <li>Reduces prompt repetition — write once, applied always</li>
+                                <li>Survives across sessions (unlike conversation context)</li>
+                            </ul>
+                            <div class="card mt-3">
+                                <div class="card-body text-center">
+                                    <p class="card-text mt-2">Think of CLAUDE.md as the <strong style="color: #00ff88;">"onboarding doc"</strong> you give a new developer — Claude reads it before doing any work in your project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: #00d4ff;" class="mt-5">Generate it with <code>/init</code></h4>
+                    <p>Don't write CLAUDE.md from scratch. Run this command inside your project folder:</p>
+                    <div class="code-block">claude /init</div>
+                    <div class="highlight-box">
+                        <strong style="color: #00d4ff;">What <code>/init</code> does:</strong>
+                        <ul class="mt-2 mb-0">
+                            <li>Scans your project files and detects tech stack, structure, and conventions</li>
+                            <li>Generates a CLAUDE.md with relevant context pre-filled</li>
+                            <li>Places it at the root of your project automatically</li>
+                            <li>You then <strong>edit it</strong> to add QA conventions, agent routing, and constraints</li>
+                        </ul>
+                    </div>
+
+                    <h4 style="color: #00d4ff;" class="mt-4">Example CLAUDE.md for a QA Project:</h4>
+                    <div class="code-block"><pre style="color: #00ff88; margin: 0; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 0.9rem;"># Project: Payment Service
+
+## Tech Stack
+- Backend: Node.js + Express
+- Database: PostgreSQL
+- Testing: Jest (unit) + Playwright (e2e)
+- CI: GitHub Actions
+
+## QA Conventions
+- All test files live under /tests
+- Use describe/it block pattern
+- Mock external APIs only — never mock the database
+- Test data is seeded in /tests/fixtures
+
+## Agent Routing
+- Use /qa-agent for bugs + test case design
+- Use /sdet-agent for code explanation + root cause
+
+## Important Notes
+- Payment flow is business-critical — always verify edge cases
+- Any change to /src/payment must pass /qa-agent review
+- Do not generate migration files
+- Do not modify .env files</pre></div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-layer-group"></i> Tech Stack</h5><p class="card-text">Tell Claude which languages, frameworks, and DB you use so it matches your conventions automatically.</p></div></div></div>
+                        <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-route"></i> Agent Routing</h5><p class="card-text">Define which agent handles which task so Claude picks the right one without being told each time.</p></div></div></div>
+                        <div class="col-md-4 mb-3"><div class="card"><div class="card-body"><h5 class="card-title"><i class="fas fa-ban"></i> Constraints</h5><p class="card-text">Set hard rules (never modify .env, never mock DB) so Claude never crosses boundaries you care about.</p></div></div></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-5 mt-5">
+        <div class="container">
+            <p>© 2026 Road to Career.</p>
+            <p style="font-size: 0.9rem;">Build reliable, intelligent testing systems with Claude AI</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
