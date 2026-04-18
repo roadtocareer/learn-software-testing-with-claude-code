@@ -3,16 +3,16 @@ import Layout from '../components/Layout';
 export default function Skills() {
   return (
     <Layout title="Skills - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="skills" className="section">
             <h2><i className="fas fa-wand-magic-sparkles"></i> Skills</h2>
             <p className="lead">Reusable expertise you write once, use everywhere.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">What is Skill?</h4>
+            <h4  className="mt-5">What is Skill?</h4>
             <p>Skill is a reusable expertise. Without a skill: every time you want Claude to do a task, you'd have to explain how — which library to use, the file format, styling rules, etc.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Available Skills</h4>
+            <h4  className="mt-5">Available Skills</h4>
             <div className="row">
               <div className="col-md-6 mb-4"><div className="card"><div className="card-body"><h5 className="card-title"><i className="fas fa-list-check"></i> analyze-requirement</h5><p className="card-text">Extract business logic, system flow, scope, risks, and gaps from requirements or Jira tickets.</p></div></div></div>
               <div className="col-md-6 mb-4"><div className="card"><div className="card-body"><h5 className="card-title"><i className="fas fa-code"></i> explain-code</h5><p className="card-text">Explain code flow, logic, and business behavior from files or commits.</p></div></div></div>
@@ -22,15 +22,15 @@ export default function Skills() {
               <div className="col-md-6 mb-4"><div className="card"><div className="card-body"><h5 className="card-title"><i className="fas fa-magnifying-glass"></i> analyze-rootcause</h5><p className="card-text">Analyze logs/errors and identify root cause using code + DB.</p></div></div></div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">When to use:</h4>
+            <h4  className="mt-5">When to use:</h4>
             <ul>
               <li>Only bug finding: <span className="badge-custom">/find-bug payment.js</span></li>
               <li>Only test case generation: <span className="badge-custom">/test-design payment.js</span></li>
               <li>Only root cause analysis: <span className="badge-custom">/analyze-rootcause error.log</span></li>
             </ul>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Folder Structure</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`.claude/skills/
+            <h4  className="mt-5">Folder Structure</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`.claude/skills/
 ├── analyze-requirement/SKILL.md
 ├── explain-code/SKILL.md
 ├── find-bug/SKILL.md
@@ -38,14 +38,14 @@ export default function Skills() {
 ├── analyze-security/SKILL.md
 └── analyze-rootcause/SKILL.md`}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">SKILL.md Files</h4>
+            <h4  className="mt-5">SKILL.md Files</h4>
             <p>Each SKILL.md defines: role, tool usage rules, output format, and constraints. Click to expand:</p>
 
             <div className="accordion mb-4" id="skillsAccordion">
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAR">analyze-requirement &gt; SKILL.md</button></h2>
                 <div id="skillAR" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-requirement
 description: Analyze requirement or Jira ticket to extract business logic, system flow, scope, risks, and gaps
 ---
@@ -69,10 +69,10 @@ You are a Senior SDET and QA Engineer.
 - Concise (bullet points only) — No test cases — No deep code explanation`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillEC">explain-code &gt; SKILL.md</button></h2>
                 <div id="skillEC" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: explain-code
 description: Explain code flow, logic, and business behavior from file or commit
 ---
@@ -98,10 +98,10 @@ You are a Senior SDET. Explain code with logic + business understanding.
 ## Rules — No test cases — No requirement analysis — Concise`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillFB">find-bug &gt; SKILL.md</button></h2>
                 <div id="skillFB" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: find-bug
 description: Identify high-probability bugs from code/commit using business logic and DB context
 ---
@@ -125,10 +125,10 @@ You are a Senior QA bug hunter. Find high-probability bugs only.
 ## Rules — Max 5–8 bugs — No generic guesses — Evidence required`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillTD">test-design &gt; SKILL.md</button></h2>
                 <div id="skillTD" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: test-design
 description: Generate sanity-focused test cases based on business logic and nearby impact
 ---
@@ -149,10 +149,10 @@ You are a Senior QA Engineer. Design sanity test cases only.
 ## Rules — Max 6–12 cases — No trivial checks — Business-critical flows only`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAS">analyze-security &gt; SKILL.md</button></h2>
                 <div id="skillAS" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-security
 description: Identify real, exploitable vulnerabilities in code or flow
 ---
@@ -172,10 +172,10 @@ You are a Security-focused SDET. Find real security risks.
 ## Rules — No generic OWASP list — Only real, relevant issues — Concise`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillRC">analyze-rootcause &gt; SKILL.md</button></h2>
                 <div id="skillRC" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-rootcause
 description: Analyze logs/errors and identify root cause using code + DB
 ---

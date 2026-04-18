@@ -3,13 +3,13 @@ import Layout from '../components/Layout';
 export default function Commands() {
   return (
     <Layout title="Commands - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="commands" className="section">
             <h2><i className="fas fa-terminal"></i> Commands</h2>
             <p className="lead">Structured ways to tell Claude what to do instantly.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">What is Command?</h4>
+            <h4  className="mt-5">What is Command?</h4>
             <p>A command is a structured way to tell Claude what to do instantly. Example usage: <span className="badge-custom">/qa-agent payment.js</span></p>
 
             <div className="row">
@@ -35,7 +35,7 @@ export default function Commands() {
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Create Command</h4>
+            <h4  className="mt-5">Create Command</h4>
             <p>Create a folder named <strong>commands</strong> inside the <strong>.claude</strong> folder. Create 2 files:</p>
             <ul>
               <li>sdet-agent.md</li>
@@ -44,15 +44,15 @@ export default function Commands() {
 
             <div className="row mt-4">
               <div className="col-md-6 mb-4">
-                <h5 style={{color: '#00d4ff'}}>sdet-agent.md</h5>
-                <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the sdet-agent to complete the following task:
+                <h5 >sdet-agent.md</h5>
+                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the sdet-agent to complete the following task:
 
 
 $ARGUMENTS`}</pre></div>
               </div>
               <div className="col-md-6 mb-4">
-                <h5 style={{color: '#00d4ff'}}>qa-agent.md</h5>
-                <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the qa-agent to complete the following task:
+                <h5 >qa-agent.md</h5>
+                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the qa-agent to complete the following task:
 
 
 $ARGUMENTS`}</pre></div>

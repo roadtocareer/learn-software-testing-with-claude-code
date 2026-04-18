@@ -16,10 +16,10 @@ export default function Home() {
       {/* Overview */}
       <div className="container-fluid py-5">
         <div className="container">
-          <h2 style={{color: '#00d4ff', textAlign: 'center', marginBottom: '40px'}}>
+          <h2 style={{color: '#7B2FF7', textAlign: 'center', marginBottom: '40px'}}>
             <i className="fas fa-map"></i> Tutorial Overview
           </h2>
-          <p className="text-center mb-5" style={{color: '#a0a0b0', fontSize: '1.1rem'}}>
+          <p className="text-center mb-5" style={{color: '#555', fontSize: '1.1rem'}}>
             A complete guide to building autonomous AI testing systems with Claude Code.<br />
             Each section is a dedicated page — click any card to dive in.
           </p>

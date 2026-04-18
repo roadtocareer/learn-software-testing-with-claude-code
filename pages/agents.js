@@ -3,13 +3,13 @@ import Layout from '../components/Layout';
 export default function Agents() {
   return (
     <Layout title="Agents - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="agents" className="section">
             <h2><i className="fas fa-robot"></i> Agents</h2>
             <p className="lead">Separate Claude instances with their own personas that run autonomously.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">What is Agent?</h4>
+            <h4  className="mt-5">What is Agent?</h4>
             <p>An agent is a separate Claude instance with its own persona and tools that runs autonomously to complete tasks.</p>
 
             <div className="row mt-4">
@@ -33,15 +33,15 @@ export default function Agents() {
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Usage Examples</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Find bugs and design test cases for payment.js
+            <h4  className="mt-5">Usage Examples</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Find bugs and design test cases for payment.js
 /qa-agent Jira ticket PROJ-421 — find bugs and design tests for payment.js
 /sdet-agent Explain the code flow and logic in payment.js
 /sdet-agent Analyze root cause for the error in logs/error.log`}</pre></div>
-            <p className="mt-2" style={{fontSize: '0.9rem', color: '#a0a0b0'}}><strong style={{color: '#00d4ff'}}>Rule:</strong> Always write a clear task instruction. The agent reads <code>$ARGUMENTS</code> literally — a path alone gives it no direction.</p>
+            <p className="mt-2" style={{fontSize: '0.9rem', color: '#555'}}><strong >Rule:</strong> Always write a clear task instruction. The agent reads <code>$ARGUMENTS</code> literally — a path alone gives it no direction.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Spawning Sub-Agents — Same Agent (Parallel)</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
+            <h4  className="mt-5">Spawning Sub-Agents — Same Agent (Parallel)</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
   ❌ WRONG — does NOT spawn parallel agents:
   /qa-agent Find bugs for all files in auth-module/
 
@@ -64,14 +64,14 @@ export default function Agents() {
               ✅ Full QA report for auth-module/
 `}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Cross-Agent Delegation</h4>
+            <h4  className="mt-5">Cross-Agent Delegation</h4>
             <div className="row mb-3">
               <div className="col-lg-6 mb-3">
                 <div className="card">
                   <div className="card-body">
                     <h5 className="card-title"><i className="fas fa-vial-circle-check"></i> qa-agent scope</h5>
                     <p><strong>Handles itself:</strong> analyze-requirement, find-bug ✅, test-design ✅, analyze-security</p>
-                    <hr style={{borderColor: '#00d4ff'}} />
+                    <hr style={{borderColor: '#ddd'}} />
                     <p><strong style={{color: '#ff6b6b'}}>Delegates out:</strong> explain-code → sdet-agent | analyze-rootcause → sdet-agent</p>
                   </div>
                 </div>
@@ -81,14 +81,14 @@ export default function Agents() {
                   <div className="card-body">
                     <h5 className="card-title"><i className="fas fa-toolbox"></i> sdet-agent scope</h5>
                     <p><strong>Handles itself:</strong> analyze-requirement, explain-code ✅, analyze-rootcause ✅, analyze-security</p>
-                    <hr style={{borderColor: '#00d4ff'}} />
+                    <hr style={{borderColor: '#ddd'}} />
                     <p><strong style={{color: '#ff6b6b'}}>Delegates out:</strong> find-bug → qa-agent | test-design → qa-agent</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
   /qa-agent Find bugs in payment.js AND explain the overall code flow
          │
          ▼
@@ -104,19 +104,19 @@ export default function Agents() {
 `}</pre></div>
 
             <div className="highlight-box mt-3">
-              <strong style={{color: '#00d4ff'}}><i className="fas fa-lightbulb"></i> Two Key Rules:</strong>
+              <strong ><i className="fas fa-lightbulb"></i> Two Key Rules:</strong>
               <ul className="mt-2 mb-0">
                 <li><strong>Delegation</strong> only happens when the request goes outside an agent's defined skills.</li>
                 <li><strong>Parallel sub-agents</strong> do not spawn automatically. You must explicitly instruct the orchestrator.</li>
               </ul>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Agent Files</h4>
+            <h4  className="mt-5">Agent Files</h4>
             <div className="accordion mb-4" id="agentsAccordion">
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agentSDET">sdet-agent.md</button></h2>
                 <div id="agentSDET" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: sdet-agent
 description: Senior SDET — analyzes requirements, explains code flow, investigates root causes, and identifies security risks.
 tools: Read, Grep, Glob, Bash
@@ -151,10 +151,10 @@ Before executing each skill, read its SKILL.md file first.
 - Always fetch real data — State assumptions clearly`}</pre></div>
                 </div></div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agentQA">qa-agent.md</button></h2>
                 <div id="agentQA" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: qa-agent
 description: Senior QA Engineer — analyzes requirements, finds high-probability bugs, and generates sanity-focused test cases.
 tools: Read, Grep, Glob, Bash

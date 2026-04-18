@@ -4,15 +4,15 @@ import Layout from '../components/Layout';
 export default function Context() {
   return (
     <Layout title="Context Engineering - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="context" className="section">
             <h2><i className="fas fa-brain"></i> Context Engineering</h2>
             <div className="row mb-4">
               <div className="col-lg-6">
-                <h4 style={{color: '#00d4ff'}}>Definition</h4>
+                <h4 >Definition</h4>
                 <p>Designing what information the AI sees, not just how you ask.</p>
-                <h5 style={{color: '#00d4ff'}}>✅ What it focuses on:</h5>
+                <h5 >✅ What it focuses on:</h5>
                 <ul className="list-item">
                   <li>Supplying relevant data dynamically</li>
                   <li>Using RAG (Retrieval-Augmented Generation)</li>
@@ -20,7 +20,7 @@ export default function Context() {
                 </ul>
               </div>
               <div className="col-lg-6">
-                <h5 style={{color: '#00d4ff'}}>💡 Example:</h5>
+                <h5 >💡 Example:</h5>
                 <p><strong>Instead of:</strong></p>
                 <div className="code-block">Explain this error</div>
                 <p><strong>You do:</strong></p>
@@ -33,7 +33,7 @@ export default function Context() {
 Task: Analyze root cause</div>
               </div>
             </div>
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Prompt Engineering vs Context Engineering</h4>
+            <h4  className="mt-5">Prompt Engineering vs Context Engineering</h4>
             <div className="table-responsive">
               <table className="table table-striped">
                 <thead>

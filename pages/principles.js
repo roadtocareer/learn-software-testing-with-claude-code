@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Principles() {
   return (
     <Layout title="Key Principles - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="principles" className="section">
             <h2><i className="fas fa-star"></i> Key Principles</h2>
@@ -14,7 +14,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-layer-group" style={{color: '#00d4ff'}}></i> Three-Layer Architecture</h5>
+                    <h5 className="card-title"><i className="fas fa-layer-group" ></i> Three-Layer Architecture</h5>
                     <p className="card-text text-sm">Core Layer (Prompt + Skill + Agent) → Context Layer (Codebase, Logs, DB, Jira) → Interface Layer (Skills, Agents, MCP)</p>
                   </div>
                 </div>
@@ -24,7 +24,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-pen-fancy" style={{color: '#00d4ff'}}></i> Role + Context + Scope</h5>
+                    <h5 className="card-title"><i className="fas fa-pen-fancy" ></i> Role + Context + Scope</h5>
                     <p className="card-text text-sm">Every prompt must define WHO (role), WHAT (context), WHERE (scope), and CONSTRAINTS (boundaries)</p>
                   </div>
                 </div>
@@ -34,7 +34,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-brain" style={{color: '#00d4ff'}}></i> Real Data First</h5>
+                    <h5 className="card-title"><i className="fas fa-brain" ></i> Real Data First</h5>
                     <p className="card-text text-sm">Context Engineering fetches ACTUAL code, logs, DB state via MCP. Never work from assumptions</p>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-wand-magic-sparkles" style={{color: '#00d4ff'}}></i> Skills-Based Reusability</h5>
+                    <h5 className="card-title"><i className="fas fa-wand-magic-sparkles" ></i> Skills-Based Reusability</h5>
                     <p className="card-text text-sm">6 core QA skills (analyze-requirement, explain-code, find-bug, test-design, analyze-security, analyze-rootcause) are reusable, composable, and mandatory</p>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-robot" style={{color: '#00d4ff'}}></i> Agents + Full Tools</h5>
+                    <h5 className="card-title"><i className="fas fa-robot" ></i> Agents + Full Tools</h5>
                     <p className="card-text text-sm">Agents (sdet-agent, qa-agent, Superpowers) have full tool access. No permission prompts for trusted agents with guardrails</p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-chart-line" style={{color: '#00d4ff'}}></i> Evidence-Based Output</h5>
+                    <h5 className="card-title"><i className="fas fa-chart-line" ></i> Evidence-Based Output</h5>
                     <p className="card-text text-sm">Every finding must cite code line, log message, or DB query. No generic guessing — RAG always</p>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-memory" style={{color: '#00d4ff'}}></i> Memory Persistence</h5>
+                    <h5 className="card-title"><i className="fas fa-memory" ></i> Memory Persistence</h5>
                     <p className="card-text text-sm">Store patterns, lessons, and domain knowledge in MEMORY.md. Reuse across sessions and projects</p>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-anchor" style={{color: '#00d4ff'}}></i> Hooks = Automatic Guardrails</h5>
+                    <h5 className="card-title"><i className="fas fa-anchor" ></i> Hooks = Automatic Guardrails</h5>
                     <p className="card-text text-sm">PreToolUse + PostToolUse hooks block dangerous ops and auto-enforce standards (linting, formatting, file locks)</p>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-file-code" style={{color: '#00d4ff'}}></i> CLAUDE.md Foundation</h5>
+                    <h5 className="card-title"><i className="fas fa-file-code" ></i> CLAUDE.md Foundation</h5>
                     <p className="card-text text-sm">Define tech stack, file conventions, MCP servers, agent routing ONCE. Reuse for all tasks in that project</p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-crosshairs" style={{color: '#00d4ff'}}></i> Sanity Scope (Not Exhaustive)</h5>
+                    <h5 className="card-title"><i className="fas fa-crosshairs" ></i> Sanity Scope (Not Exhaustive)</h5>
                     <p className="card-text text-sm">Test critical paths, key workflows, obvious edge cases. Avoid combinatorial explosions</p>
                   </div>
                 </div>
@@ -124,15 +124,15 @@ export default function Principles() {
               <div className="col-lg-4 mb-3">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-sliders" style={{color: '#00d4ff'}}></i> Plan Mode First</h5>
+                    <h5 className="card-title"><i className="fas fa-sliders" ></i> Plan Mode First</h5>
                     <p className="card-text text-sm">Always Plan Mode for new agents/complex tasks. Review strategy, approve scope. Then switch to Act Mode or invoke Superpowers</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="highlight-box mt-5" style={{border: '2px solid #00d4ff', background: 'linear-gradient(135deg, rgba(0,212,255,0.05), rgba(0,153,255,0.05))'}}>
-              <h4 style={{color: '#00d4ff', marginBottom: '15px'}}><i className="fas fa-lightbulb"></i> The Complete Workflow (7 Steps)</h4>
+            <div className="highlight-box mt-5" style={{border: '2px solid #7B2FF7', background: '#f9f5ff'}}>
+              <h4 style={{color: '#7B2FF7', marginBottom: '15px'}}><i className="fas fa-lightbulb"></i> The Complete Workflow (7 Steps)</h4>
               <ol style={{fontSize: '0.95rem', lineHeight: '1.8'}}>
                 <li><strong>Define CLAUDE.md</strong> — Document stack, conventions, MCP servers, agent routing upfront</li>
                 <li><strong>Configure Hooks</strong> — Set PreToolUse (block .env, migrations) and PostToolUse (auto-format, lint)</li>
@@ -144,8 +144,8 @@ export default function Principles() {
               </ol>
             </div>
 
-            <div className="highlight-box mt-4" style={{borderLeft: '4px solid #00ff88', background: 'rgba(0,255,136,0.05)'}}>
-              <p className="mb-0"><strong style={{color: '#00ff88'}}><i className="fas fa-check-circle"></i> Core Truth:</strong> This system works because it combines <strong>precise prompting</strong> + <strong>real context</strong> + <strong>autonomous agents</strong> + <strong>automatic guardrails</strong>. No component alone is sufficient. Together, they create reliable, intelligent testing.</p>
+            <div className="highlight-box mt-4" style={{borderLeft: '4px solid #7B2FF7', background: '#f9f5ff'}}>
+              <p className="mb-0"><strong style={{color: '#333'}}><i className="fas fa-check-circle"></i> Core Truth:</strong> This system works because it combines <strong>precise prompting</strong> + <strong>real context</strong> + <strong>autonomous agents</strong> + <strong>automatic guardrails</strong>. No component alone is sufficient. Together, they create reliable, intelligent testing.</p>
             </div>
           </section>
         </div>

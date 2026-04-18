@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Modes() {
   return (
     <Layout title="Plan vs Act Mode - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="modes" className="section">
             <h2><i className="fas fa-sliders"></i> Plan Mode vs Act Mode</h2>
@@ -16,7 +16,7 @@ export default function Modes() {
                   <div className="card-body">
                     <div className="icon-box" style={{background: 'linear-gradient(135deg, #a855f7, #7c3aed)'}}><i className="fas fa-map"></i></div>
                     <h5 className="card-title text-center" style={{color: '#a855f7'}}>Plan Mode</h5>
-                    <p className="text-center" style={{color: '#a0a0b0', fontSize: '0.85rem'}}>Think first, don&apos;t act yet</p>
+                    <p className="text-center" style={{color: '#555', fontSize: '0.85rem'}}>Think first, don&apos;t act yet</p>
                     <hr style={{borderColor: '#a855f7'}} />
                     <p><strong style={{color: '#a855f7'}}>What it does:</strong></p>
                     <ul style={{fontSize: '0.9rem'}}>
@@ -36,33 +36,33 @@ export default function Modes() {
                 </div>
               </div>
               <div className="col-lg-6 mb-4">
-                <div className="card h-100" style={{borderColor: '#00ff88'}}>
+                <div className="card h-100" style={{borderColor: '#ddd'}}>
                   <div className="card-body">
-                    <div className="icon-box" style={{background: 'linear-gradient(135deg, #00ff88, #00a855)'}}><i className="fas fa-play"></i></div>
-                    <h5 className="card-title text-center" style={{color: '#00ff88'}}>Act Mode</h5>
-                    <p className="text-center" style={{color: '#a0a0b0', fontSize: '0.85rem'}}>Think and act immediately</p>
-                    <hr style={{borderColor: '#00ff88'}} />
-                    <p><strong style={{color: '#00ff88'}}>What it does:</strong></p>
+                    <div className="icon-box" style={{background: '#5a1fc0'}}><i className="fas fa-play"></i></div>
+                    <h5 className="card-title text-center" style={{color: '#333'}}>Act Mode</h5>
+                    <p className="text-center" style={{color: '#555', fontSize: '0.85rem'}}>Think and act immediately</p>
+                    <hr style={{borderColor: '#ddd'}} />
+                    <p><strong style={{color: '#333'}}>What it does:</strong></p>
                     <ul style={{fontSize: '0.9rem'}}>
                       <li>Claude reads context and executes the task directly</li>
                       <li>Runs tools, reads files, and produces output in one go</li>
                       <li>Requests your approval before destructive actions</li>
                       <li>Faster for well-defined, familiar tasks</li>
                     </ul>
-                    <p className="mt-3"><strong style={{color: '#00ff88'}}>Use when:</strong></p>
+                    <p className="mt-3"><strong style={{color: '#333'}}>Use when:</strong></p>
                     <ul style={{fontSize: '0.9rem'}}>
                       <li>The task is clear and well-scoped</li>
                       <li>Running a known command like <code>/qa-agent</code></li>
                       <li>Quick analysis or read-only operations</li>
                     </ul>
-                    <div className="code-block" style={{fontSize: '0.85rem', marginTop: '10px', borderColor: '#00ff88'}}>Default mode in Claude Code</div>
+                    <div className="code-block" style={{fontSize: '0.85rem', marginTop: '10px', borderColor: '#ddd'}}>Default mode in Claude Code</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">How They Differ in Practice</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>
+            <h4  className="mt-4">How They Differ in Practice</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>
   Same command — different behavior per mode:
 
   You type:  /qa-agent Find bugs and design tests for payment.js
@@ -90,10 +90,10 @@ export default function Modes() {
 </pre></div>
 
             <div className="highlight-box mt-4">
-              <strong style={{color: '#00d4ff'}}><i className="fas fa-lightbulb"></i> When to Use Plan Mode for QA Work:</strong>
+              <strong ><i className="fas fa-lightbulb"></i> When to Use Plan Mode for QA Work:</strong>
               <div className="row mt-3">
                 <div className="col-md-6">
-                  <p style={{color: '#00ff88', fontWeight: 'bold'}}>✅ Use Plan Mode when:</p>
+                  <p style={{color: '#333', fontWeight: 'bold'}}>✅ Use Plan Mode when:</p>
                   <ul style={{fontSize: '0.9rem'}}>
                     <li>Running a new agent on an unfamiliar codebase</li>
                     <li>Agent will touch multiple files or run DB queries</li>

@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Hooks() {
   return (
     <Layout title="Hooks - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="hooks" className="section">
             <h2><i className="fas fa-anchor"></i> Hooks</h2>
@@ -16,31 +16,31 @@ export default function Hooks() {
                   <div className="card-body">
                     <div className="icon-box" style={{background: 'linear-gradient(135deg, #a855f7, #7c3aed)'}}><i className="fas fa-arrow-right-to-bracket"></i></div>
                     <h5 className="card-title text-center" style={{color: '#a855f7'}}>PreToolUse Hook</h5>
-                    <p className="text-center" style={{color: '#a0a0b0', fontSize: '0.85rem'}}>Runs BEFORE Claude uses a tool</p>
+                    <p className="text-center" style={{color: '#555', fontSize: '0.85rem'}}>Runs BEFORE Claude uses a tool</p>
                     <hr style={{borderColor: '#a855f7'}} />
                     <ul style={{fontSize: '0.9rem'}}><li>Can <strong>block</strong> the action by exiting non-zero</li><li>Use for: validation, logging, approval gates</li><li>Block protected files, validate read-only queries</li></ul>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 mb-4">
-                <div className="card h-100" style={{borderColor: '#00ff88'}}>
+                <div className="card h-100" style={{borderColor: '#ddd'}}>
                   <div className="card-body">
-                    <div className="icon-box" style={{background: 'linear-gradient(135deg, #00ff88, #00a855)'}}><i className="fas fa-arrow-right-from-bracket"></i></div>
-                    <h5 className="card-title text-center" style={{color: '#00ff88'}}>PostToolUse Hook</h5>
-                    <p className="text-center" style={{color: '#a0a0b0', fontSize: '0.85rem'}}>Runs AFTER Claude uses a tool</p>
-                    <hr style={{borderColor: '#00ff88'}} />
+                    <div className="icon-box" style={{background: '#5a1fc0'}}><i className="fas fa-arrow-right-from-bracket"></i></div>
+                    <h5 className="card-title text-center" style={{color: '#333'}}>PostToolUse Hook</h5>
+                    <p className="text-center" style={{color: '#555', fontSize: '0.85rem'}}>Runs AFTER Claude uses a tool</p>
+                    <hr style={{borderColor: '#ddd'}} />
                     <ul style={{fontSize: '0.9rem'}}><li>Cannot undo, but can react to it</li><li>Use for: auto-formatting, notifications, audit logging</li><li>Run prettier, lint, send Slack alerts</li></ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">Where to Configure Hooks</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`C:\\Users\\<YourName>\\.claude\\settings.json    ← global (all projects)
+            <h4  className="mt-4">Where to Configure Hooks</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`C:\\Users\\<YourName>\\.claude\\settings.json    ← global (all projects)
 your-project\\.claude\\settings.json           ← project-level only`}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Hook Configuration Format</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`{
+            <h4  className="mt-5">Hook Configuration Format</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`{
   "hooks": {
     "PreToolUse": [
       {
@@ -57,7 +57,7 @@ your-project\\.claude\\settings.json           ← project-level only`}</pre></d
   }
 }`}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Available Matchers</h4>
+            <h4  className="mt-5">Available Matchers</h4>
             <div className="table-responsive mt-3">
               <table className="table table-striped">
                 <thead><tr><th>Matcher</th><th>Fires when Claude...</th></tr></thead>
@@ -71,23 +71,23 @@ your-project\\.claude\\settings.json           ← project-level only`}</pre></d
               </table>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Environment Variables in Hooks</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`$CLAUDE_TOOL_NAME        ← Name of the tool being used (e.g. "Bash", "Write")
+            <h4  className="mt-5">Environment Variables in Hooks</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`$CLAUDE_TOOL_NAME        ← Name of the tool being used (e.g. "Bash", "Write")
 $CLAUDE_FILE_PATH        ← Full path of file being written/read/edited
 $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Real QA Examples</h4>
+            <h4  className="mt-5">Real QA Examples</h4>
 
             <div className="accordion mb-4" id="hooksAccordion">
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #a855f7', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #a855f7', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header">
-                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx1" style={{background: '#1a1a2e', color: '#a855f7'}}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx1" style={{background: '#fff', color: '#a855f7'}}>
                     🛡️ PreToolUse — Block writes to .env and migration files
                   </button>
                 </h2>
                 <div id="hookEx1" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
+                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
   "matcher": "Write",
   "hooks": [{
     "type": "command",
@@ -100,15 +100,15 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
                   </div>
                 </div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00ff88', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{marginBottom: '10px'}}>
                 <h2 className="accordion-header">
-                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx2" style={{background: '#1a1a2e', color: '#00ff88'}}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx2" style={{background: '#fff', color: '#333'}}>
                     ✨ PostToolUse — Auto-format every file Claude writes
                   </button>
                 </h2>
                 <div id="hookEx2" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PostToolUse": [{
+                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PostToolUse": [{
   "matcher": "Write",
   "hooks": [{
     "type": "command",
@@ -120,15 +120,15 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
                   </div>
                 </div>
               </div>
-              <div className="accordion-item" style={{background: '#1a1a2e', border: '1px solid #00d4ff', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
+              <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header">
-                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx3" style={{background: '#1a1a2e', color: '#00d4ff'}}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hookEx3" style={{background: '#fff', color: '#7B2FF7'}}>
                     📋 PreToolUse — Audit log all bash commands
                   </button>
                 </h2>
                 <div id="hookEx3" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
+                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
   "matcher": "Bash",
   "hooks": [{
     "type": "command",
@@ -143,7 +143,7 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
             </div>
 
             <div className="highlight-box">
-              <strong style={{color: '#00d4ff'}}><i className="fas fa-lightbulb"></i> Key Rules:</strong>
+              <strong ><i className="fas fa-lightbulb"></i> Key Rules:</strong>
               <ul className="mt-2 mb-0">
                 <li><strong>Exit 0</strong> = hook passed → Claude continues. <strong>Exit non-zero</strong> = blocked (PreToolUse only)</li>
                 <li>Hooks run <strong>outside</strong> Claude's context — plain shell commands, not Claude instructions</li>

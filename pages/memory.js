@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Memory() {
   return (
     <Layout title="Memory - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="memory" className="section">
             <h2><i className="fas fa-memory"></i> Memory</h2>
@@ -28,24 +28,24 @@ export default function Memory() {
               <div className="col-lg-6 mb-4">
                 <div className="card">
                   <div className="card-body">
-                    <h5 className="card-title"><i className="fas fa-circle-check" style={{color: '#00ff88'}}></i> With Memory</h5>
-                    <hr style={{borderColor: '#00ff88'}} />
+                    <h5 className="card-title"><i className="fas fa-circle-check" style={{color: '#333'}}></i> With Memory</h5>
+                    <hr style={{borderColor: '#ddd'}} />
                     <ul style={{fontSize: '0.9rem', color: '#c0c0c0'}}>
                       <li>Claude retains key project facts across all sessions</li>
                       <li>Agents load memory automatically before executing skills</li>
                       <li>Decisions and discoveries persist</li>
                     </ul>
-                    <div className="code-block" style={{fontSize: '0.85rem', marginTop: '10px', borderColor: '#00ff88'}}>&#10003; Context loaded from memory/MEMORY.md</div>
+                    <div className="code-block" style={{fontSize: '0.85rem', marginTop: '10px', borderColor: '#ddd'}}>&#10003; Context loaded from memory/MEMORY.md</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">How Memory Works</h4>
+            <h4  className="mt-4">How Memory Works</h4>
             <p>Memory lives in <code>.claude/memory/MEMORY.md</code> — a simple markdown file Claude reads when you reference it.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Example MEMORY.md</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`# Project Memory — Payment Service
+            <h4  className="mt-5">Example MEMORY.md</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`# Project Memory — Payment Service
 
 ## Architecture Decisions
 - All payment records use soft-delete: set \`deleted_at\`, never DELETE rows
@@ -63,7 +63,7 @@ export default function Memory() {
 - DO NOT suggest adding \`ON DELETE CASCADE\` to payment_items — orphans audit logs
 - DO NOT test /admin/refund without role=superadmin — silently fails with 200`}</pre></div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Memory vs CLAUDE.md</h4>
+            <h4  className="mt-5">Memory vs CLAUDE.md</h4>
             <div className="table-responsive mt-3">
               <table className="table table-striped">
                 <thead><tr><th>Aspect</th><th>CLAUDE.md</th><th>MEMORY.md</th></tr></thead>
@@ -76,7 +76,7 @@ export default function Memory() {
               </table>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5"><i className="fas fa-fire" style={{color: '#ff6b6b'}}></i> Memory &amp; Token Cost</h4>
+            <h4  className="mt-5"><i className="fas fa-fire" style={{color: '#ff6b6b'}}></i> Memory &amp; Token Cost</h4>
             <p>Yes — reading MEMORY.md <strong>does consume tokens</strong>. Every file Claude reads loads into its context window.</p>
             <div className="highlight-box" style={{borderColor: '#ff9500'}}>
               <strong style={{color: '#ff9500'}}><i className="fas fa-scale-balanced"></i> Token Cost Rule of Thumb:</strong>
@@ -87,21 +87,21 @@ export default function Memory() {
               </ul>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">How to Use Memory with Agents</h4>
+            <h4  className="mt-5">How to Use Memory with Agents</h4>
             <div className="highlight-box">
               <p className="mb-2">Tell your agent to load memory before starting a task:</p>
-              <div className="code-block" style={{marginBottom: 0}}><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Read ~/.claude/memory/MEMORY.md first, then find bugs in payment.js`}</pre></div>
+              <div className="code-block" style={{marginBottom: 0}}><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Read ~/.claude/memory/MEMORY.md first, then find bugs in payment.js`}</pre></div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Keeping Memory Updated</h4>
+            <h4  className="mt-5">Keeping Memory Updated</h4>
             <div className="highlight-box" style={{borderColor: '#ff9500'}}>
               <strong style={{color: '#ff9500'}}><i className="fas fa-triangle-exclamation"></i> Why Hooks Cannot Update Memory Directly</strong>
               <p className="mt-2 mb-0" style={{fontSize: '0.9rem'}}>PostToolUse hooks run <strong>shell commands</strong> — they cannot issue instructions to Claude. Memory updates must come from inside Claude's instruction flow — via agent definitions or commands.</p>
             </div>
 
-            <h5 style={{color: '#00d4ff'}} className="mt-4">Method 1 — Agent Definition (Recommended)</h5>
+            <h5  className="mt-4">Method 1 — Agent Definition (Recommended)</h5>
             <p>Add this to your agent files to update memory automatically after each task:</p>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`## Memory Update (MANDATORY — run after every task)
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`## Memory Update (MANDATORY — run after every task)
 
 After completing your analysis, update \`~/.claude/memory/MEMORY.md\`:
 1. Read the current MEMORY.md file
@@ -109,15 +109,15 @@ After completing your analysis, update \`~/.claude/memory/MEMORY.md\`:
 3. Do NOT duplicate existing entries
 4. Keep entries concise — one line per finding`}</pre></div>
 
-            <h5 style={{color: '#00d4ff'}} className="mt-4">Method 2 — <code>/save-memory</code> Command</h5>
+            <h5  className="mt-4">Method 2 — <code>/save-memory</code> Command</h5>
             <p>Create <code>.claude/commands/save-memory.md</code>:</p>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`Review everything discovered in this session.
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`Review everything discovered in this session.
 Read ~/.claude/memory/MEMORY.md.
 Update it with new findings: patterns, constraints, DB facts, anti-patterns.
 Keep each entry concise — one line. Confirm what was added.`}</pre></div>
-            <p className="mt-2" style={{fontSize: '0.9rem', color: '#a0a0b0'}}>Run at end of any productive session: <span className="badge-custom">/save-memory</span></p>
+            <p className="mt-2" style={{fontSize: '0.9rem', color: '#555'}}>Run at end of any productive session: <span className="badge-custom">/save-memory</span></p>
 
-            <h5 style={{color: '#00d4ff'}} className="mt-4">Method 3 — Inline Prompt</h5>
+            <h5  className="mt-4">Method 3 — Inline Prompt</h5>
             <div className="code-block">Update ~/.claude/memory/MEMORY.md with any new patterns from what we just did.</div>
           </section>
         </div>

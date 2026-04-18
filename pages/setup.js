@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Setup() {
   return (
     <Layout title="Install Claude - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="setup" className="section">
             <h2><i className="fas fa-download"></i> Install Claude</h2>
@@ -11,8 +11,8 @@ export default function Setup() {
               <div className="col-lg-8">
                 <p className="lead">Follow these steps to set up Claude for Software Testing with AI:</p>
                 <div className="highlight-box">
-                  <div className="list-item"><span className="step-number">1</span> <strong>Get subscription</strong> from <a href="https://www.anthropic.com/" target="_blank" style={{color: '#00d4ff'}}>https://www.anthropic.com/</a></div>
-                  <div className="list-item"><span className="step-number">2</span> <strong>Create API key</strong> from <a href="https://console.anthropic.com/" target="_blank" style={{color: '#00d4ff'}}>https://console.anthropic.com/</a></div>
+                  <div className="list-item"><span className="step-number">1</span> <strong>Get subscription</strong> from <a href="https://www.anthropic.com/" target="_blank" >https://www.anthropic.com/</a></div>
+                  <div className="list-item"><span className="step-number">2</span> <strong>Create API key</strong> from <a href="https://console.anthropic.com/" target="_blank" >https://console.anthropic.com/</a></div>
                   <div className="list-item"><span className="step-number">3</span> <strong>Install Claude CLI</strong> via npm</div>
                   <div className="code-block">npm install -g @anthropic-ai/claude-code</div>
                   <div className="list-item"><span className="step-number">4</span> <strong>Check installation</strong></div>

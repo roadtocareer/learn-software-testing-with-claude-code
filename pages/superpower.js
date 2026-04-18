@@ -3,20 +3,20 @@ import Layout from '../components/Layout';
 export default function Superpower() {
   return (
     <Layout title="Superpower Mode - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="superpower" className="section">
             <h2><i className="fas fa-bolt" style={{color: '#ffd700'}}></i> ⚡ Superpowers Agent</h2>
             <p className="lead">An autonomous agent with 14 mandatory skills and full tool calling power. Superpowers IS an agent — not a mode or plugin wrapper.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">What is Superpowers?</h4>
+            <h4  className="mt-5">What is Superpowers?</h4>
             <p><strong>Superpowers is an autonomous agent</strong> that has every skill and comprehensive tool access built in. It operates with full autonomy to analyze, plan, and execute complex testing workflows without restrictions.</p>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">14 Mandatory Superpowers Skills</h4>
+            <h4  className="mt-4">14 Mandatory Superpowers Skills</h4>
             <p>The Superpowers agent includes these core capabilities:</p>
             <div className="row mt-3">
               <div className="col-lg-6">
-                <div className="highlight-box" style={{background: 'rgba(0, 212, 255, 0.05)', borderLeftColor: '#00d4ff'}}>
+                <div className="highlight-box" style={{background: '#f9f5ff', borderLeftColor: '#7B2FF7'}}>
                   <ol style={{fontSize: '0.9rem', marginBottom: 0}}>
                     <li><strong>Analyze Requirements</strong> — Extract scope, flow, risks</li>
                     <li><strong>Explain Code</strong> — Trace logic and behavior</li>
@@ -29,7 +29,7 @@ export default function Superpower() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="highlight-box" style={{background: 'rgba(0, 212, 255, 0.05)', borderLeftColor: '#00d4ff'}}>
+                <div className="highlight-box" style={{background: '#f9f5ff', borderLeftColor: '#7B2FF7'}}>
                   <ol start="8" style={{fontSize: '0.9rem', marginBottom: 0}}>
                     <li><strong>Brainstorm</strong> — Generate ideas and solutions</li>
                     <li><strong>Execute Plan</strong> — Run multi-step workflows</li>
@@ -43,53 +43,53 @@ export default function Superpower() {
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Installation &amp; Setup</h4>
+            <h4  className="mt-5">Installation &amp; Setup</h4>
             <div className="row mt-3">
               <div className="col-lg-6 mb-3">
-                <h5 style={{color: '#00d4ff'}}>1. Install Superpowers Plugin</h5>
-                <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`npm install -g @obra/superpowers
+                <h5 >1. Install Superpowers Plugin</h5>
+                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`npm install -g @obra/superpowers
 # or
 claude install superpowers`}</pre></div>
               </div>
               <div className="col-lg-6 mb-3">
-                <h5 style={{color: '#00d4ff'}}>2. Verify Installation</h5>
-                <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`claude /using-superpowers
+                <h5 >2. Verify Installation</h5>
+                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`claude /using-superpowers
 # Shows available commands and skills`}</pre></div>
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">Core Commands</h4>
+            <h4  className="mt-4">Core Commands</h4>
             <table className="table" style={{marginTop: '15px'}}>
               <thead>
-                <tr style={{borderBottom: '2px solid #00d4ff'}}>
-                  <th style={{color: '#00d4ff', fontWeight: 'bold'}}>Command</th>
-                  <th style={{color: '#00d4ff', fontWeight: 'bold'}}>Description</th>
-                  <th style={{color: '#00d4ff', fontWeight: 'bold'}}>Use Case</th>
+                <tr style={{borderBottom: '2px solid #7B2FF7'}}>
+                  <th style={{color: '#7B2FF7', fontWeight: 'bold'}}>Command</th>
+                  <th style={{color: '#7B2FF7', fontWeight: 'bold'}}>Description</th>
+                  <th style={{color: '#7B2FF7', fontWeight: 'bold'}}>Use Case</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><code style={{color: '#00ff88'}}>/using-superpowers</code></td>
+                  <td><code style={{color: '#333'}}>/using-superpowers</code></td>
                   <td>Display all available Superpowers skills and commands</td>
                   <td>Get help, discover capabilities</td>
                 </tr>
                 <tr>
-                  <td><code style={{color: '#00ff88'}}>/brainstorming</code></td>
+                  <td><code style={{color: '#333'}}>/brainstorming</code></td>
                   <td>AI brainstorms creative solutions for a problem</td>
                   <td>Generate test strategies, edge cases</td>
                 </tr>
                 <tr>
-                  <td><code style={{color: '#00ff88'}}>/executing-plans</code></td>
+                  <td><code style={{color: '#333'}}>/executing-plans</code></td>
                   <td>Execute multi-step workflows without human intervention</td>
                   <td>Full autonomous test runs, analysis chains</td>
                 </tr>
               </tbody>
             </table>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Usage Examples</h4>
+            <h4  className="mt-5">Usage Examples</h4>
             <div className="highlight-box">
               <p><strong>Example 1: Brainstorm edge cases for a login form</strong></p>
-              <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/brainstorming
+              <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/brainstorming
 Task: Generate 50 edge case test scenarios for user authentication including SQL injection, rate limiting, session hijacking, 2FA bypass, concurrent login, password reset exploits
 
 Result: Superpowers generates comprehensive test matrix with scenarios, payloads, and expected behaviors.`}</pre></div>
@@ -97,7 +97,7 @@ Result: Superpowers generates comprehensive test matrix with scenarios, payloads
 
             <div className="highlight-box">
               <p><strong>Example 2: Execute full test scenario autonomously</strong></p>
-              <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/executing-plans
+              <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/executing-plans
 Steps:
 1. Analyze this payment processor requirement
 2. Identify security risks
@@ -108,12 +108,12 @@ Steps:
 Result: Fully autonomous execution — no intervention until complete report.`}</pre></div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">When to Invoke Superpowers</h4>
+            <h4  className="mt-5">When to Invoke Superpowers</h4>
             <div className="row mt-3">
               <div className="col-md-6 mb-3">
-                <div className="card" style={{borderColor: '#00ff88'}}>
+                <div className="card" style={{borderColor: '#ddd'}}>
                   <div className="card-body">
-                    <h5 className="card-title" style={{color: '#00ff88'}}>✅ Perfect For:</h5>
+                    <h5 className="card-title" style={{color: '#333'}}>✅ Perfect For:</h5>
                     <ul style={{fontSize: '0.9rem'}}>
                       <li>Complex multi-step testing workflows</li>
                       <li>Comprehensive edge case generation</li>

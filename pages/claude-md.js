@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function ClaudeMd() {
   return (
     <Layout title="CLAUDE.md - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="claudemd" className="section">
             <h2><i className="fas fa-file-code"></i> CLAUDE.md</h2>
@@ -11,9 +11,9 @@ export default function ClaudeMd() {
 
             <div className="row mb-4">
               <div className="col-lg-6">
-                <h4 style={{color: '#00d4ff'}}>What is CLAUDE.md?</h4>
+                <h4 >What is CLAUDE.md?</h4>
                 <p>A markdown file that Claude Code reads before doing any work. It tells Claude about your project — tech stack, conventions, agent routing rules — so you never have to repeat yourself each session.</p>
-                <h5 style={{color: '#00d4ff'}} className="mt-4">Where to place it:</h5>
+                <h5  className="mt-4">Where to place it:</h5>
                 <div className="highlight-box">
                   <div className="list-item"><strong>Project-level</strong> — applies to this repo only</div>
                   <div className="code-block">your-project/CLAUDE.md</div>
@@ -22,7 +22,7 @@ export default function ClaudeMd() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <h4 style={{color: '#00d4ff'}}>Why it matters:</h4>
+                <h4 >Why it matters:</h4>
                 <ul>
                   <li>Claude knows your project without being told every session</li>
                   <li>Enforces consistent behavior across all skills and agents</li>
@@ -31,17 +31,17 @@ export default function ClaudeMd() {
                 </ul>
                 <div className="card mt-3">
                   <div className="card-body text-center">
-                    <p className="card-text mt-2">Think of CLAUDE.md as the <strong style={{color: '#00ff88'}}>"onboarding doc"</strong> you give a new developer — Claude reads it before doing any work in your project.</p>
+                    <p className="card-text mt-2">Think of CLAUDE.md as the <strong style={{color: '#333'}}>"onboarding doc"</strong> you give a new developer — Claude reads it before doing any work in your project.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-5">Generate it with <code>/init</code></h4>
+            <h4  className="mt-5">Generate it with <code>/init</code></h4>
             <p>Don't write CLAUDE.md from scratch. Run this command inside your project folder:</p>
             <div className="code-block">claude /init</div>
             <div className="highlight-box">
-              <strong style={{color: '#00d4ff'}}>What <code>/init</code> does:</strong>
+              <strong >What <code>/init</code> does:</strong>
               <ul className="mt-2 mb-0">
                 <li>Scans your project files and detects tech stack, structure, and conventions</li>
                 <li>Generates a CLAUDE.md with relevant context pre-filled</li>
@@ -50,8 +50,8 @@ export default function ClaudeMd() {
               </ul>
             </div>
 
-            <h4 style={{color: '#00d4ff'}} className="mt-4">Example CLAUDE.md for a QA Project:</h4>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`# Project: Payment Service
+            <h4  className="mt-4">Example CLAUDE.md for a QA Project:</h4>
+            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`# Project: Payment Service
 
 ## Tech Stack
 - Backend: Node.js + Express

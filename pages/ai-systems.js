@@ -4,11 +4,11 @@ import Layout from '../components/Layout';
 export default function AiSystems() {
   return (
     <Layout title="AI Systems - Software Testing with AI">
-      <div className="container-fluid py-5" style={{background: '#0a0a14'}}>
+      <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="ai-systems" className="section">
             <h2><i className="fas fa-layer-group"></i> How Modern AI Systems Work</h2>
-            <p className="lead mb-4" style={{color: '#00d4ff'}}>AI System = Core Layer + Context Layer + Interface Layer</p>
+            <p className="lead mb-4" >AI System = Core Layer + Context Layer + Interface Layer</p>
             <div className="row">
               <div className="col-lg-4">
                 <div className="card">
@@ -38,9 +38,9 @@ export default function AiSystems() {
                 </div>
               </div>
             </div>
-            <h4 style={{color: '#00d4ff'}} className="mt-5">End-to-End Workflow</h4>
+            <h4  className="mt-5">End-to-End Workflow</h4>
             <p>How all three layers connect when you run a real command:</p>
-            <div className="code-block"><pre style={{color: '#00ff88', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
+            <div className="code-block"><pre style={{color: '#333', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
 {`  You type:  /qa-agent payment.js
                 │
                 ▼

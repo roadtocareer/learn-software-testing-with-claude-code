@@ -65,8 +65,8 @@ export default function Sidebar() {
       <div
         style={{
           position: 'fixed', left: 0, top: 0, width: 280,
-          height: 56, background: 'linear-gradient(90deg, #1a1a2e, #16213e)',
-          borderRight: '2px solid #00d4ff', borderBottom: '2px solid #00d4ff',
+          height: 56, background: '#7B2FF7',
+          borderBottom: '1px solid #6620e0',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           zIndex: 1001,
         }}
@@ -79,7 +79,7 @@ export default function Sidebar() {
         >
           <span /><span /><span />
         </button>
-        <span style={{ color: '#00d4ff', fontWeight: 'bold', fontSize: '1.1rem', letterSpacing: 1 }}>
+        <span style={{ color: '#fff', fontWeight: 'bold', fontSize: '1.1rem', letterSpacing: 1 }}>
           MASTER IN CLAUDE
         </span>
       </div>
