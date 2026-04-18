@@ -34,14 +34,14 @@ export default function Agents() {
             </div>
 
             <h4  className="mt-5">Usage Examples</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Find bugs and design test cases for payment.js
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Find bugs and design test cases for payment.js
 /qa-agent Jira ticket PROJ-421 — find bugs and design tests for payment.js
 /sdet-agent Explain the code flow and logic in payment.js
 /sdet-agent Analyze root cause for the error in logs/error.log`}</pre></div>
             <p className="mt-2" style={{fontSize: '0.9rem', color: '#555'}}><strong >Rule:</strong> Always write a clear task instruction. The agent reads <code>$ARGUMENTS</code> literally — a path alone gives it no direction.</p>
 
             <h4  className="mt-5">Spawning Sub-Agents — Same Agent (Parallel)</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
   ❌ WRONG — does NOT spawn parallel agents:
   /qa-agent Find bugs for all files in auth-module/
 
@@ -88,7 +88,7 @@ export default function Agents() {
               </div>
             </div>
 
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`
   /qa-agent Find bugs in payment.js AND explain the overall code flow
          │
          ▼
@@ -116,7 +116,7 @@ export default function Agents() {
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agentSDET">sdet-agent.md</button></h2>
                 <div id="agentSDET" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: sdet-agent
 description: Senior SDET — analyzes requirements, explains code flow, investigates root causes, and identifies security risks.
 tools: Read, Grep, Glob, Bash
@@ -154,7 +154,7 @@ Before executing each skill, read its SKILL.md file first.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agentQA">qa-agent.md</button></h2>
                 <div id="agentQA" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: qa-agent
 description: Senior QA Engineer — analyzes requirements, finds high-probability bugs, and generates sanity-focused test cases.
 tools: Read, Grep, Glob, Bash

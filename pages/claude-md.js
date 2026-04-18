@@ -51,7 +51,7 @@ export default function ClaudeMd() {
             </div>
 
             <h4  className="mt-4">Example CLAUDE.md for a QA Project:</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`# Project: Payment Service
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`# Project: Payment Service
 
 ## Tech Stack
 - Backend: Node.js + Express

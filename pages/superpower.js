@@ -47,13 +47,13 @@ export default function Superpower() {
             <div className="row mt-3">
               <div className="col-lg-6 mb-3">
                 <h5 >1. Install Superpowers Plugin</h5>
-                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`npm install -g @obra/superpowers
+                <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`npm install -g @obra/superpowers
 # or
 claude install superpowers`}</pre></div>
               </div>
               <div className="col-lg-6 mb-3">
                 <h5 >2. Verify Installation</h5>
-                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`claude /using-superpowers
+                <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`claude /using-superpowers
 # Shows available commands and skills`}</pre></div>
               </div>
             </div>
@@ -89,7 +89,7 @@ claude install superpowers`}</pre></div>
             <h4  className="mt-5">Usage Examples</h4>
             <div className="highlight-box">
               <p><strong>Example 1: Brainstorm edge cases for a login form</strong></p>
-              <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/brainstorming
+              <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/brainstorming
 Task: Generate 50 edge case test scenarios for user authentication including SQL injection, rate limiting, session hijacking, 2FA bypass, concurrent login, password reset exploits
 
 Result: Superpowers generates comprehensive test matrix with scenarios, payloads, and expected behaviors.`}</pre></div>
@@ -97,7 +97,7 @@ Result: Superpowers generates comprehensive test matrix with scenarios, payloads
 
             <div className="highlight-box">
               <p><strong>Example 2: Execute full test scenario autonomously</strong></p>
-              <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/executing-plans
+              <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`/executing-plans
 Steps:
 1. Analyze this payment processor requirement
 2. Identify security risks

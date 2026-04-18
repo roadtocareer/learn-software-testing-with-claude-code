@@ -61,7 +61,7 @@ export default function Mcp() {
               <div className="col-lg-6">
                 <div className="highlight-box">
                   <strong >Method 2: CLI (from registry)</strong>
-                  <div className="code-block mt-2" style={{marginBottom: 0}}><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`claude mcp add --scope user github-mcp \\
+                  <div className="code-block mt-2" style={{marginBottom: 0}}><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`claude mcp add --scope user github-mcp \\
   npx @modelcontextprotocol/server-github
 
 claude mcp add --scope user postgres-mcp \\

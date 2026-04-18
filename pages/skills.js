@@ -30,7 +30,7 @@ export default function Skills() {
             </ul>
 
             <h4  className="mt-5">Folder Structure</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`.claude/skills/
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`.claude/skills/
 ├── analyze-requirement/SKILL.md
 ├── explain-code/SKILL.md
 ├── find-bug/SKILL.md
@@ -45,7 +45,7 @@ export default function Skills() {
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAR">analyze-requirement &gt; SKILL.md</button></h2>
                 <div id="skillAR" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-requirement
 description: Analyze requirement or Jira ticket to extract business logic, system flow, scope, risks, and gaps
 ---
@@ -72,7 +72,7 @@ You are a Senior SDET and QA Engineer.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillEC">explain-code &gt; SKILL.md</button></h2>
                 <div id="skillEC" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: explain-code
 description: Explain code flow, logic, and business behavior from file or commit
 ---
@@ -101,7 +101,7 @@ You are a Senior SDET. Explain code with logic + business understanding.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillFB">find-bug &gt; SKILL.md</button></h2>
                 <div id="skillFB" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: find-bug
 description: Identify high-probability bugs from code/commit using business logic and DB context
 ---
@@ -128,7 +128,7 @@ You are a Senior QA bug hunter. Find high-probability bugs only.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillTD">test-design &gt; SKILL.md</button></h2>
                 <div id="skillTD" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: test-design
 description: Generate sanity-focused test cases based on business logic and nearby impact
 ---
@@ -152,7 +152,7 @@ You are a Senior QA Engineer. Design sanity test cases only.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillAS">analyze-security &gt; SKILL.md</button></h2>
                 <div id="skillAS" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-security
 description: Identify real, exploitable vulnerabilities in code or flow
 ---
@@ -175,7 +175,7 @@ You are a Security-focused SDET. Find real security risks.
               <div className="accordion-item" style={{background: '#fff', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '8px', overflow: 'hidden'}}>
                 <h2 className="accordion-header"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillRC">analyze-rootcause &gt; SKILL.md</button></h2>
                 <div id="skillRC" className="accordion-collapse collapse"><div className="accordion-body">
-                  <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
+                  <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`---
 name: analyze-rootcause
 description: Analyze logs/errors and identify root cause using code + DB
 ---

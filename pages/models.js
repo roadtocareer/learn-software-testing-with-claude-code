@@ -77,7 +77,7 @@ export default function Models() {
             </div>
 
             <h4  className="mt-5">Setting Model in Agent Files</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>---
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>---
 name: qa-agent
 description: Senior QA Engineer — finds bugs and designs test cases
 tools: Read, Grep, Glob, Bash

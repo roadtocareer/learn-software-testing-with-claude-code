@@ -40,7 +40,7 @@ export default function AiSystems() {
             </div>
             <h4  className="mt-5">End-to-End Workflow</h4>
             <p>How all three layers connect when you run a real command:</p>
-            <div className="code-block"><pre style={{color: '#333', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
 {`  You type:  /qa-agent payment.js
                 │
                 ▼

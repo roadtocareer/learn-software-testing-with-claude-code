@@ -14,7 +14,7 @@ export default function Structure() {
 
             {/* Directory Tree */}
             <div className="code-block mt-4 mb-4">
-<pre style={{color: '#333', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
+<pre style={{color: '#d4d4d4', margin: 0, fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>
 {`~/.claude/                         ← Global Claude config (all projects)
 │
 ├── memory/                        ← Persistent facts Claude recalls across sessions

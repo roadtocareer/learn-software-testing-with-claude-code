@@ -45,7 +45,7 @@ export default function Memory() {
             <p>Memory lives in <code>.claude/memory/MEMORY.md</code> — a simple markdown file Claude reads when you reference it.</p>
 
             <h4  className="mt-5">Example MEMORY.md</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`# Project Memory — Payment Service
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`# Project Memory — Payment Service
 
 ## Architecture Decisions
 - All payment records use soft-delete: set \`deleted_at\`, never DELETE rows
@@ -90,7 +90,7 @@ export default function Memory() {
             <h4  className="mt-5">How to Use Memory with Agents</h4>
             <div className="highlight-box">
               <p className="mb-2">Tell your agent to load memory before starting a task:</p>
-              <div className="code-block" style={{marginBottom: 0}}><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Read ~/.claude/memory/MEMORY.md first, then find bugs in payment.js`}</pre></div>
+              <div className="code-block" style={{marginBottom: 0}}><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`/qa-agent Read ~/.claude/memory/MEMORY.md first, then find bugs in payment.js`}</pre></div>
             </div>
 
             <h4  className="mt-5">Keeping Memory Updated</h4>
@@ -101,7 +101,7 @@ export default function Memory() {
 
             <h5  className="mt-4">Method 1 — Agent Definition (Recommended)</h5>
             <p>Add this to your agent files to update memory automatically after each task:</p>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`## Memory Update (MANDATORY — run after every task)
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`## Memory Update (MANDATORY — run after every task)
 
 After completing your analysis, update \`~/.claude/memory/MEMORY.md\`:
 1. Read the current MEMORY.md file
@@ -111,7 +111,7 @@ After completing your analysis, update \`~/.claude/memory/MEMORY.md\`:
 
             <h5  className="mt-4">Method 2 — <code>/save-memory</code> Command</h5>
             <p>Create <code>.claude/commands/save-memory.md</code>:</p>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`Review everything discovered in this session.
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`Review everything discovered in this session.
 Read ~/.claude/memory/MEMORY.md.
 Update it with new findings: patterns, constraints, DB facts, anti-patterns.
 Keep each entry concise — one line. Confirm what was added.`}</pre></div>

@@ -62,7 +62,7 @@ export default function Modes() {
             </div>
 
             <h4  className="mt-4">How They Differ in Practice</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: '0', whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>
   Same command — different behavior per mode:
 
   You type:  /qa-agent Find bugs and design tests for payment.js

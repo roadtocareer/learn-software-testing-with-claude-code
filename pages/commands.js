@@ -45,14 +45,14 @@ export default function Commands() {
             <div className="row mt-4">
               <div className="col-md-6 mb-4">
                 <h5 >sdet-agent.md</h5>
-                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the sdet-agent to complete the following task:
+                <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the sdet-agent to complete the following task:
 
 
 $ARGUMENTS`}</pre></div>
               </div>
               <div className="col-md-6 mb-4">
                 <h5 >qa-agent.md</h5>
-                <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the qa-agent to complete the following task:
+                <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.9rem'}}>{`Use the qa-agent to complete the following task:
 
 
 $ARGUMENTS`}</pre></div>

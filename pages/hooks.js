@@ -36,11 +36,11 @@ export default function Hooks() {
             </div>
 
             <h4  className="mt-4">Where to Configure Hooks</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`C:\\Users\\<YourName>\\.claude\\settings.json    ← global (all projects)
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`C:\\Users\\<YourName>\\.claude\\settings.json    ← global (all projects)
 your-project\\.claude\\settings.json           ← project-level only`}</pre></div>
 
             <h4  className="mt-5">Hook Configuration Format</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`{
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`{
   "hooks": {
     "PreToolUse": [
       {
@@ -72,7 +72,7 @@ your-project\\.claude\\settings.json           ← project-level only`}</pre></d
             </div>
 
             <h4  className="mt-5">Environment Variables in Hooks</h4>
-            <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`$CLAUDE_TOOL_NAME        ← Name of the tool being used (e.g. "Bash", "Write")
+            <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`$CLAUDE_TOOL_NAME        ← Name of the tool being used (e.g. "Bash", "Write")
 $CLAUDE_FILE_PATH        ← Full path of file being written/read/edited
 $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
 
@@ -87,7 +87,7 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
                 </h2>
                 <div id="hookEx1" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
+                    <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
   "matcher": "Write",
   "hooks": [{
     "type": "command",
@@ -108,7 +108,7 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
                 </h2>
                 <div id="hookEx2" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PostToolUse": [{
+                    <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PostToolUse": [{
   "matcher": "Write",
   "hooks": [{
     "type": "command",
@@ -128,7 +128,7 @@ $CLAUDE_TOOL_INPUT       ← Full JSON input of the tool call`}</pre></div>
                 </h2>
                 <div id="hookEx3" className="accordion-collapse collapse">
                   <div className="accordion-body">
-                    <div className="code-block"><pre style={{color: '#333', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
+                    <div className="code-block"><pre style={{color: '#d4d4d4', margin: 0, whiteSpace: 'pre-wrap', fontFamily: "'Courier New', monospace", fontSize: '0.85rem'}}>{`"PreToolUse": [{
   "matcher": "Bash",
   "hooks": [{
     "type": "command",
