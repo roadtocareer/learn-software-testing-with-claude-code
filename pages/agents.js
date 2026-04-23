@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Agents() {
   return (
-    <Layout title="Agents - Software Testing with AI">
+    <Layout title="Agents - Software Testing with AI" description="Build qa-agent and sdet-agent for autonomous software testing with Claude AI. Learn orchestrator patterns, parallel spawning, and cross-agent delegation.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="agents" className="section">

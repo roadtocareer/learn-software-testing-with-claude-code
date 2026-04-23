@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Models() {
   return (
-    <Layout title="Claude Models - Software Testing with AI">
+    <Layout title="Claude Models - Software Testing with AI" description="Compare Claude AI models for software testing: Opus vs Sonnet vs Haiku. Learn pricing, capabilities, and when to use each model in your test suite.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="models" className="section">

@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Superpower() {
   return (
-    <Layout title="Superpower Mode - Software Testing with AI">
+    <Layout title="Superpower Mode - Software Testing with AI" description="Enable Claude Superpower Mode for fully autonomous software testing. Remove approval prompts and use hooks as guardrails for unattended test execution.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="superpower" className="section">

@@ -1,9 +1,41 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 
+const BASE_URL = 'https://roadtocareer.github.io/learn-software-testing-with-claude-code'
+const PAGE_TITLE = 'Software Testing with AI - Complete Tutorial'
+const PAGE_DESCRIPTION = 'Master software testing with Claude AI. Complete tutorial covering prompt engineering, context engineering, skills, agents, MCP servers, and more for QA engineers and SDETs.'
+const OG_IMAGE = `${BASE_URL}/resources/mermaid-diagram.png`
+
 export default function Home() {
   return (
-    <Layout title="Software Testing with AI - Complete Tutorial">
+    <Layout title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
+      <Head>
+        <title>{PAGE_TITLE}</title>
+        <meta name="description" content={PAGE_DESCRIPTION} />
+        <link rel="canonical" href={`${BASE_URL}/`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Software Testing with AI" />
+        <meta property="og:title" content={PAGE_TITLE} />
+        <meta property="og:description" content={PAGE_DESCRIPTION} />
+        <meta property="og:url" content={`${BASE_URL}/`} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={PAGE_TITLE} />
+        <meta name="twitter:description" content={PAGE_DESCRIPTION} />
+        <meta name="twitter:image" content={OG_IMAGE} />
+
+        {/* Extra SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Road to Career" />
+        <meta name="keywords" content="software testing, Claude AI, QA engineer, SDET, prompt engineering, test automation, AI testing, Claude Code, Learn Claude Code" />
+      </Head>
       {/* Hero */}
       <div className="hero">
         <div className="container">

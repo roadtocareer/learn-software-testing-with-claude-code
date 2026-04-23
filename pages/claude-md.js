@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function ClaudeMd() {
   return (
-    <Layout title="CLAUDE.md - Software Testing with AI">
+    <Layout title="CLAUDE.md - Software Testing with AI" description="Learn to configure CLAUDE.md for software testing projects. Teach Claude your stack, test conventions, and routing rules once — applied to every session.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="claudemd" className="section">

@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Skills() {
   return (
-    <Layout title="Skills - Software Testing with AI">
+    <Layout title="Skills - Software Testing with AI" description="Discover 6 reusable Claude AI testing skills: find-bug, test-design, explain-code, analyze-rootcause, analyze-security, and analyze-requirement slash commands.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="skills" className="section">

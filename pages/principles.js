@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Principles() {
   return (
-    <Layout title="Key Principles - Software Testing with AI">
+    <Layout title="Key Principles - Software Testing with AI" description="8 core principles for building reliable, autonomous AI testing systems with Claude Code. Essential guidelines every QA engineer and SDET should follow.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="principles" className="section">

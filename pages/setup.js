@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Setup() {
   return (
-    <Layout title="Install Claude - Software Testing with AI">
+    <Layout title="Install Claude - Software Testing with AI" description="Step-by-step guide to install Claude Code for software testing. Set up your subscription, API key, CLI, and VSCode extension.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="setup" className="section">

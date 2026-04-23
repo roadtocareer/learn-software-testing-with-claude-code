@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 export default function Structure() {
   const { basePath } = useRouter();
   return (
-    <Layout title="Claude Architecture - Software Testing with AI">
+    <Layout title="Claude Architecture - Software Testing with AI" description="Explore Claude Code architecture for software testing: memory, skills, agents, commands, and .claude.json configuration explained in detail.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="structure" className="section">

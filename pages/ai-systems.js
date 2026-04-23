@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 export default function AiSystems() {
   return (
-    <Layout title="AI Systems - Software Testing with AI">
+    <Layout title="AI Systems - Software Testing with AI" description="Understand AI testing system architecture: Core, Context, and Interface layers. Build modern end-to-end AI systems for software quality assurance.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="ai-systems" className="section">

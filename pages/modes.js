@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Modes() {
   return (
-    <Layout title="Plan vs Act Mode - Software Testing with AI">
+    <Layout title="Plan vs Act Mode - Software Testing with AI" description="Understand Claude's Plan Mode vs Act Mode for AI-driven software testing. Learn when Claude plans first vs acts immediately for better test automation.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="modes" className="section">

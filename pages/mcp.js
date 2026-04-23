@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Mcp() {
   return (
-    <Layout title="MCP Server - Software Testing with AI">
+    <Layout title="MCP Server - Software Testing with AI" description="Connect Claude AI to Jira, databases, GitHub, and Slack with MCP Servers. Install from marketplace or CLI to give your tests live data access.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="mcp" className="section">

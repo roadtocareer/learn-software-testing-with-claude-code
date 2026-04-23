@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Marketplace() {
   return (
-    <Layout title="Marketplaces - Software Testing with AI">
+    <Layout title="Marketplaces - Software Testing with AI" description="Explore Claude AI marketplace for software testing tools, MCP servers, skills, and agents. Extend Claude Code with community-built testing integrations.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="marketplace" className="section">

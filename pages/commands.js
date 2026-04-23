@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Commands() {
   return (
-    <Layout title="Commands - Software Testing with AI">
+    <Layout title="Commands - Software Testing with AI" description="Create custom slash commands for software testing with Claude AI. Build /qa-agent, /sdet-agent, /save-memory, and reusable test workflow commands.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="commands" className="section">

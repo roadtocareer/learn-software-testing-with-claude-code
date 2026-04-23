@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Hooks() {
   return (
-    <Layout title="Hooks - Software Testing with AI">
+    <Layout title="Hooks - Software Testing with AI" description="Implement PreToolUse and PostToolUse hooks in Claude for software testing automation. Auto-format code, block protected files, and intercept AI actions safely.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="hooks" className="section">

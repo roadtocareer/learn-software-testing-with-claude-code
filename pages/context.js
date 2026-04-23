@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 export default function Context() {
   return (
-    <Layout title="Context Engineering - Software Testing with AI">
+    <Layout title="Context Engineering - Software Testing with AI" description="Learn context engineering for AI testing systems. Design what Claude sees using RAG, real database data, Jira tickets, and dynamic context injection.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="context" className="section">

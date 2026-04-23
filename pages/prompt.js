@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 export default function Prompt() {
   return (
-    <Layout title="Prompt Engineering - Software Testing with AI">
+    <Layout title="Prompt Engineering - Software Testing with AI" description="Master prompt engineering for software testing with Claude AI. Apply Role + Context + Scope + Constraints to write effective testing prompts.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="prompt" className="section">

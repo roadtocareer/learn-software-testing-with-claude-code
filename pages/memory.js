@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Memory() {
   return (
-    <Layout title="Memory - Software Testing with AI">
+    <Layout title="Memory - Software Testing with AI" description="Implement persistent AI memory for software testing across sessions using Claude Code. Manage token costs and update methods for long-running test projects.">
       <div className="container-fluid py-5" style={{background: '#fff'}}>
         <div className="container">
           <section id="memory" className="section">
